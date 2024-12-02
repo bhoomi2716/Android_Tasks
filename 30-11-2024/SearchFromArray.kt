@@ -1,12 +1,12 @@
 fun main()
 {
-    var array= arrayOfNulls<String>(3)
+    var array = emptyArray<String>()
 
     for(i in 0..2)
     {
         println("Enter Name $i ")
-        var name= readln().toString()
-        array[i]+=name
+        val name = readLine().toString()
+        array+=name
     }
 
     println(array.contentToString())
@@ -14,13 +14,13 @@ fun main()
     println("Enter A Name Which You Want To Search")
     var takename= readln().toString()
 
-    for (i in 0..2)
+    if(takename in array)
     {
-        if(array[i]==takename)
-        {
-            println("Your Searched Name Is On $i Index")
-            break
-        }
+        println("Your Entered Name Is Exist In Array")
     }
-//    println("Your Searched Name Is Not Exists In This Array.... ")
+    else
+    {
+        println("Your Entered Name Does not Exist In Array ")
+    }
+
 }
