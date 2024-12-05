@@ -2,7 +2,7 @@ import java.io.FileOutputStream
 import java.io.ObjectOutputStream
 import java.io.Serializable
 
-class Flower(var name : String, var color: String) : Serializable
+class Flower1(var name : String, var color: String) : Serializable
 {
 
 }
@@ -14,7 +14,7 @@ fun main()
     println("Enter Flower colour Name : ")
     var color= readln().toString()
 
-    var f=Flower(name,color)
+    var f=Flower1(name,color)
     var writeFile=FileOutputStream("D:\\Android_Tasks\\02-12-2024\\Flower.txt")
     var write=ObjectOutputStream(writeFile)
     write.writeObject(f)
