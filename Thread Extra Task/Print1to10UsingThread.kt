@@ -1,5 +1,6 @@
-// Creating Threads: Write a Kotlin program to create two threads that print numbers from 1 to 10.
-// Ensure the threads run simultaneously.
+// Synchronization: Create a program where two threads access a shared resource (e.g., a counter).
+// Use synchronization to prevent race conditions.
+
 
 class InitializeNumber
 {

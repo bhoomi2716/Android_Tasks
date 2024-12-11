@@ -1,3 +1,5 @@
+// Thread Priority: Demonstrate how to set priorities for threads in Kotlin.
+// Create two threads and show the impact of different priorities on their execution order.
 
 fun main()
 {
@@ -21,6 +23,4 @@ fun main()
 
     println(" Max Priority : $max_priority $max")
     println(" Min Priority : $min_priority $min")
-
-
 }

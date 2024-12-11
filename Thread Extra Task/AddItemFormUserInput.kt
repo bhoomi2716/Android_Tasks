@@ -1,3 +1,7 @@
+// Thread Communication: Implement a producer-consumer model in Kotlin using threads,
+// where one thread produces items and another consumes them.
+
+
 class addItem : Thread()
 {
     companion object{
