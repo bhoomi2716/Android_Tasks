@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FoodStation">
+
+    <TextView
+        android:id="@+id/panipuri_Ing_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingredients Of Pani Puri"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/panipuri_Ing1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 puri shells"
+        android:layout_below="@+id/panipuri_Ing_heading"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/panipuri_Ing2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 For Masala Filling"
+        android:layout_below="@+id/panipuri_Ing1"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/panipuri_Ing2.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\t \t \u276F Boiled Potatoes
+                   \n\t \t \u276F black chickpeas
+                   \n\t \t \u276F Red Chilli Powder
+                   \n\t \t \u276F CuminPowder
+                   \n\t \t \u276F Coriander Powder
+                   \n\t \t \u276F Chat Masala Powder"
+        android:layout_below="@+id/panipuri_Ing2"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/panipuri_Ing3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Spiced Water"
+        android:layout_below="@+id/panipuri_Ing2.1"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/panipuri_Ing3.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\t \t \u276F Mint
+                       \n\t \t \u276F Coriander
+                       \n\t \t \u276F Lemon
+                       \n\t \t \u276F Black Salt
+                       \n\t \t \u276F Chat Masala"
+        android:layout_below="@+id/panipuri_Ing3"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/panipuri_Ing4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Green Chutney"
+        android:layout_below="@+id/panipuri_Ing3.1"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>

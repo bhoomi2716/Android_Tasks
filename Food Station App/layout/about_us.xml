@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs"
+    android:background="#8870C1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_contact_page"
+        android:layout_margin="45dp">
+
+       <TextView
+            android:id="@+id/AboutUs_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textSize="50dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/hawthorne_intage"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/contant1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="\u276F Our Company provie Healthy and Fresh Food"
+            android:layout_below="@id/AboutUs_heading"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/contant2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="\u276F You Can Call And Send Mail From Option Menu"
+            android:layout_below="@id/contant1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/contant3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="\u276F You Can Also Order Food By Calling"
+            android:layout_below="@id/contant2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/contant4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="\u276F You Can Also Share This Application"
+            android:layout_below="@id/contant3"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="25dp"
+            />
+
+    </RelativeLayout>
+    </RelativeLayout>

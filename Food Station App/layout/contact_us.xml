@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUs"
+    android:background="#8870C1">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_contact_page"
+    android:layout_margin="45dp">
+
+    <TextView
+        android:id="@+id/ContactUs_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textSize="50dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/hawthorne_intage"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/CallIconIMG"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/call_icon"
+        android:layout_below="@id/ContactUs_heading"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/CallNumTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+917863084052"
+        android:textSize="22dp"
+        android:layout_below="@id/CallIconIMG"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/queensides"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/EmailIconIMG"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/email_icon"
+        android:layout_below="@id/CallNumTXT"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/EmailTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bhoomiwadhvana@gmail.com"
+        android:textSize="22dp"
+        android:layout_below="@id/EmailIconIMG"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:fontFamily="@font/queensides"
+        android:textStyle="bold"
+        />
+
+
+
+
+</RelativeLayout>
+</RelativeLayout>

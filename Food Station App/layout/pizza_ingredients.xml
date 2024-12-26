@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PizzaIngredients">
+
+    <TextView
+        android:id="@+id/pizza_Ing_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingredients Of Vegetable Pizza"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/pizza_Ing1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Vegetables"
+        android:layout_below="@+id/pizza_Ing_heading"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pizza_Ing1.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\t \t \u276F Cabbage
+                    \n\t \t \u276F Corn
+                    \n\t \t \u276F Tomato
+                    \n\t \t \u276F Olives
+                    \n\t \t \u276F Capsicum"
+        android:layout_below="@+id/pizza_Ing1"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pizza_Ing2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Sauces"
+        android:layout_below="@+id/pizza_Ing1.1"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pizza_Ing2.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\t \t \u276F Pizza Sauce
+                      \n\t \t \u276F Tomato Sauce"
+        android:layout_below="@+id/pizza_Ing2"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pizza_Ing3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 processed cheese"
+        android:layout_below="@+id/pizza_Ing2.1"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pizza_Ing4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Chilli Flakes"
+        android:layout_below="@+id/pizza_Ing3"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pizza_Ing5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Oregano"
+        android:layout_below="@+id/pizza_Ing4"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+</RelativeLayout>

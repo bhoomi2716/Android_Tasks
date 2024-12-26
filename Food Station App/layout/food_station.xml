@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".SplashScreen">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8870C1"
+        />
+<!--        <TextView-->
+<!--            android:id="@+id/heading"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Food Station"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:textSize="30dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:background="@color/black"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_marginTop="25dp"-->
+<!--            />-->
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/colddrinks_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/colddrinks"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/tool"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/colddrinks_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cold Drinks"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/colddrinks_img"
+            android:textSize="30dp"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/dosa_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/colddrinks_txt"
+            android:layout_marginTop="85dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/dosa" />
+
+        <TextView
+            android:id="@+id/dosa_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masala Dosa "
+            android:gravity="center_horizontal"
+            android:layout_below="@id/dosa_img"
+            android:textSize="30dp"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/frenchfries_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/dosa_txt"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/frenchfries" />
+
+        <TextView
+            android:id="@+id/frenchfries_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="French Fries"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/frenchfries_img"
+            android:textSize="30dp"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/icecream_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/icecream"
+            android:layout_below="@id/frenchfries_txt"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/icecream_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ice Cream"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/icecream_img"
+            android:textSize="30dp"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/panipuri_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/panipuri"
+            android:layout_below="@id/icecream_txt"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/panipuri_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pani Puri"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/panipuri_img"
+            android:textSize="30dp"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/pastry_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pastry"
+            android:layout_below="@id/panipuri_txt"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/pastry_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pineapple Pastry"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/pastry_img"
+            android:textSize="30dp"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/pavbhaji_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pavbhaji"
+            android:layout_below="@id/pastry_txt"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/pavbhaji_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pav Bhaji"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/pavbhaji_img"
+            android:textSize="30dp"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/pizza_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pizza"
+            android:layout_below="@id/pavbhaji_txt"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/pizza_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pizza"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/pizza_img"
+            android:textSize="30dp"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/samosa_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/samosa"
+            android:layout_below="@id/pizza_txt"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/samosa_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Samosa"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/samosa_img"
+            android:textSize="30dp"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/sandwich_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sandwich"
+            android:layout_below="@id/samosa_txt"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/sandwich_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sandwich"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/sandwich_img"
+            android:textSize="30dp"
+            />
+
+        <!-- ================================================ -->
+
+    </RelativeLayout>
+</ScrollView>

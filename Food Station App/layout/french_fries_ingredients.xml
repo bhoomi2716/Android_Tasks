@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FoodStation">
+
+    <TextView
+        android:id="@+id/fries_Ing_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingredients Of French Fries"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/fries_Ing1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Potatos"
+        android:layout_below="@+id/fries_Ing_heading"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/fries_Ing2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Vegetable Oil"
+        android:layout_below="@+id/fries_Ing1"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/fries_Ing3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Salt"
+        android:layout_below="@+id/fries_Ing2"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/fries_Ing4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Extra Spices As Per Need"
+        android:layout_below="@+id/fries_Ing3"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amul Products"
+            android:textSize="35sp"
+            android:layout_margin="25dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:background="#673AB7"
+            android:textColor="@color/white"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/cheese_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/amul_cheese"
+            android:layout_below="@id/heading"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/cheese_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amul Cheese"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/cheese_img"
+            android:textSize="30dp"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/breadspread_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/amul_breadspread"
+            android:layout_below="@id/cheese_txt"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/breadspread_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amul Bread Spread"
+            android:layout_below="@id/breadspread_img"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/butter_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/amul_butter"
+            android:layout_below="@id/breadspread_txt"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/butter_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amul Butter"
+            android:layout_below="@id/butter_img"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/buttermilk_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/amul_buttermilk"
+            android:layout_below="@id/butter_txt"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/buttermilk_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amul Butter Milk"
+            android:layout_below="@id/buttermilk_img"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/dahi_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/amul_dahi"
+            android:layout_below="@id/buttermilk_txt"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/dahi_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amul Masti Dahi"
+            android:layout_below="@id/dahi_img"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/freshcream_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/amul_freshcream"
+            android:layout_below="@id/dahi_txt"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/freshcream_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amul Fresh Cream"
+            android:layout_below="@id/freshcream_img"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/ghee_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/amul_ghee"
+            android:layout_below="@id/freshcream_txt"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/ghee_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amul Ghee"
+            android:layout_below="@id/ghee_img"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/milk_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/amul_milk"
+            android:layout_below="@id/ghee_txt"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/milk_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amul Milk"
+            android:layout_below="@id/milk_img"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/mithaimate_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/amul_mithaimate"
+            android:layout_below="@id/milk_txt"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/mithaimate_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amul Mithai Mate"
+            android:layout_below="@id/mithaimate_img"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            />
+
+        <!-- ================================================ -->
+
+        <ImageView
+            android:id="@+id/paneer_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/amul_paneer"
+            android:layout_below="@id/mithaimate_txt"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/paneer_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amul paneer"
+            android:layout_below="@id/paneer_img"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            />
+
+        <!-- ================================================ -->
+
+        <Button
+            android:id="@+id/clickme_btn"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click Me"
+            android:layout_below="@id/paneer_txt"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+
+            />
+
+
+    </RelativeLayout>
+</ScrollView>

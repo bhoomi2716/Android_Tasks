@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SandwichIngredients">
+
+        <TextView
+            android:id="@+id/sandwich_Ing_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients Of Vegetable Sandwich"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+        android:id="@+id/sandwich_Ing1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Bread"
+        android:layout_below="@+id/sandwich_Ing_heading"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+            />
+
+    <TextView
+        android:id="@+id/sandwich_Ing2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Vegetables For Filling"
+        android:layout_below="@+id/sandwich_Ing1"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/sandwich_Ing2.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\t \t \u276F Cabbage
+                    \n\t \t \u276F Potatos
+                    \n\t \t \u276F Tomato
+                    \n\t \t \u276F Green Chili
+                    \n\t \t \u276F Coriander"
+        android:layout_below="@+id/sandwich_Ing2"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/sandwich_Ing3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Green Chutney"
+        android:layout_below="@+id/sandwich_Ing2.1"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/sandwich_Ing4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Tomato Chutney"
+        android:layout_below="@+id/sandwich_Ing3"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/sandwich_Ing5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Cheese"
+        android:layout_below="@+id/sandwich_Ing4"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>

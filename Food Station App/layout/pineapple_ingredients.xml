@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PineappleIngredients"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/pastry_Ing_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingredients Of Pineapple Pastry"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/pastry_Ing1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Purpose Flour"
+        android:layout_below="@+id/pastry_Ing_heading"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pastry_Ing2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Backing Powder"
+        android:layout_below="@+id/pastry_Ing1"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pastry_Ing3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Yogurt"
+        android:layout_below="@+id/pastry_Ing2"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pastry_Ing4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Backing Soda"
+        android:layout_below="@+id/pastry_Ing3"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pastry_Ing5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Castor Sugar"
+        android:layout_below="@+id/pastry_Ing4"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pastry_Ing6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Vegetable Oil"
+        android:layout_below="@+id/pastry_Ing5"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/pastry_Ing7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Pineapple Essence And Syrup"
+        android:layout_below="@+id/pastry_Ing6"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pastry_Ing8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Pineapple Juice"
+        android:layout_below="@+id/pastry_Ing7"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pastry_Ing9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 Wipping Cream"
+        android:layout_below="@+id/pastry_Ing8"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/pastry_Ing10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\u2022 chopped canned pineapple chunks"
+        android:layout_below="@+id/pastry_Ing9"
+        android:textSize="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        />
+</RelativeLayout>
+
+
+
+<!--    1 + ½ cups (180g) all purpose flour (maida)-->
+<!--    1 teaspoon (4g) baking powder-->
+<!--    ¾ cup (215g) yogurt-->
+<!--    ½ teaspoon (3g) baking soda-->
+<!--    ¾ cup (150g) castor sugar-->
+<!--    ½ cup (120g) vegetable oil-->
+<!--    1 teaspoon (5g) Pineapple essence-->
+<!--    ¼ cup (60g) pineapple juice-->
+<!--    2-3 tbsp (30-45ml) pineapple syrup from the pineapple can-->
+<!--    1 + ½ cup (345ml) whipping cream-->
+<!--    1 tsp (5g) pineapple essence-->
+<!--    ½ cup (100g) chopped canned pineapple chunks-->
+<!--    6 fresh cherries-->
