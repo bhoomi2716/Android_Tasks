@@ -201,6 +201,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/signupBtn"
             android:text="SignUp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:textColor="#340066"
             android:backgroundTint="@color/white"
             android:textSize="20dp"

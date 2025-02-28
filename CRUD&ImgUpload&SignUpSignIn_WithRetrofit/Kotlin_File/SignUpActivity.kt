@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.CompoundButton
 import android.widget.EditText
 import android.widget.RadioButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import retrofit2.Call
@@ -53,6 +54,7 @@ class SignUpActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeListen
 
         femalegender.setOnCheckedChangeListener(this)
         malegender.setOnCheckedChangeListener(this)
+
 
         signupBtn.setOnClickListener {
             val name = namesignup.text.toString()

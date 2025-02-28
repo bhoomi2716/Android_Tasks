@@ -17,7 +17,6 @@ class SignInActivity : AppCompatActivity()
     lateinit var emailsingnin : EditText
     lateinit var passwordsignin : EditText
     lateinit var signinBtn : Button
-    lateinit var signuptxt : TextView
     lateinit var apiInterface: ApiInterface
 
     @SuppressLint("MissingInflatedId")
@@ -29,7 +28,6 @@ class SignInActivity : AppCompatActivity()
         emailsingnin = findViewById(R.id.emailSiginIn)
         passwordsignin = findViewById(R.id.passwordSiginIn)
         signinBtn = findViewById(R.id.signinBtn)
-        signuptxt = findViewById(R.id.signupTxt)
 
         apiInterface = ApiClient().getapiclient().create(ApiInterface::class.java)
 
@@ -40,10 +38,6 @@ class SignInActivity : AppCompatActivity()
 
             var call = apiInterface.SignIn(email,password)
 
-            signuptxt.setOnClickListener {
-
-                startActivity(Intent(applicationContext,SignUpActivity::class.java))
-            }
 
             call.enqueue(object : retrofit2.Callback<Model>
             {
