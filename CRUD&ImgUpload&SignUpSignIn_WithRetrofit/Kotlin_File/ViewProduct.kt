@@ -105,7 +105,7 @@ class ViewProduct : AppCompatActivity() {
             R.id.logout->
             {
                 sharedPreferences.edit().clear().commit()
-                var i = Intent(applicationContext,SignUpActivity::class.java)
+                var i = Intent(applicationContext,SignInActivity::class.java)
                 startActivity(i)
             }
         }
