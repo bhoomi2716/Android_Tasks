@@ -1,12 +1,17 @@
 package com.example.projectsignupandsigninandcrud
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import retrofit2.Call
@@ -20,16 +25,25 @@ class ViewProduct : AppCompatActivity() {
     lateinit var apiInterface: ApiInterface
     lateinit var itemlist: MutableList<ProductModel>
     lateinit var adapter: ProductAdapter
+    lateinit var toolbar : Toolbar
+    lateinit var sharedPreferences: SharedPreferences
 
     @SuppressLint("MissingInflatedId")
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.view_product)
 
         searchView = findViewById(R.id.searchview)
+        toolbar = findViewById(R.id.toolbar)
         addbtn = findViewById(R.id.addBtn)
         recyclerView = findViewById(R.id.recyclerview)
         itemlist = ArrayList<ProductModel>()
+
+        toolbar.setTitle("Product App")
+        setSupportActionBar(toolbar)
+
+        sharedPreferences = getSharedPreferences("MYSESSION", Context.MODE_PRIVATE)
 
         var layoutManager : RecyclerView.LayoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
@@ -76,6 +90,26 @@ class ViewProduct : AppCompatActivity() {
             }
         })
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean
+    {
+        menuInflater.inflate(R.menu.logout_menu,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean
+    {
+        when(item.itemId)
+        {
+            R.id.logout->
+            {
+                sharedPreferences.edit().clear().commit()
+                var i = Intent(applicationContext,SignUpActivity::class.java)
+                startActivity(i)
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun filter1(text: String) {
