@@ -150,4 +150,9 @@ class UpdateProduct : AppCompatActivity()
         }
     }
 
+    override fun onBackPressed() {
+        startActivity(Intent(applicationContext,ViewProduct::class.java))
+        super.onBackPressed()
+    }
+
 }

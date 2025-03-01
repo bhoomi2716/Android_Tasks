@@ -159,4 +159,9 @@ class AddProduct : AppCompatActivity()
             addimg.setImageURI(filepath)
         }
     }
+
+    override fun onBackPressed() {
+        startActivity(Intent(applicationContext,ViewProduct::class.java))
+        super.onBackPressed()
+    }
 }
