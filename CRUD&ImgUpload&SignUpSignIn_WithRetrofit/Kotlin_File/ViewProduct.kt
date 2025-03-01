@@ -29,7 +29,7 @@ class ViewProduct : AppCompatActivity() {
         searchView = findViewById(R.id.searchview)
         addbtn = findViewById(R.id.addBtn)
         recyclerView = findViewById(R.id.recyclerview)
-        itemlist = ArrayList()
+        itemlist = ArrayList<ProductModel>()
 
         var layoutManager : RecyclerView.LayoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
@@ -57,9 +57,48 @@ class ViewProduct : AppCompatActivity() {
             }
         })
 
+
         addbtn.setOnClickListener {
             startActivity(Intent(applicationContext, AddProduct::class.java))
             finish()
+        }
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String): Boolean {
+              //  adapter.filter.f//i
+                //Toast.makeText(applicationContext, "2", Toast.LENGTH_SHORT).show()
+                filter1(newText)
+                return false
+            }
+        })
+
+    }
+
+    private fun filter1(text: String) {
+        // creating a new array list to filter our data.
+        val filteredlist: ArrayList<ProductModel> = ArrayList()
+
+        // running a for loop to compare elements.
+        for (item in itemlist) {
+            // checking if the entered string matched with any item of our recycler view.
+            if (item.pname.toLowerCase().contains(text.toLowerCase())) {
+                // if the item is matched we are
+                // adding it to our filtered list.
+                filteredlist.add(item)
+            }
+        }
+        if (filteredlist.isEmpty()) {
+            // if no item is added in filtered list we are
+            // displaying a toast message as no data found.
+            Toast.makeText(this, "No Data Found..", Toast.LENGTH_SHORT).show()
+        } else {
+            // at last we are passing that filtered
+            // list to our adapter class.
+            adapter.filterList(filteredlist)
         }
     }
 

@@ -47,15 +47,16 @@ interface ApiInterface
     @GET("productview.php")
     fun ViweProduct() : Call<List<ProductModel>>
 
-    @FormUrlEncoded
+    @Multipart
     @POST("productupdate.php")
-    fun UpdateProduct(
-        @Field("pid") pid:Int,
-        @Field("pname") pname:String,
-        @Field("pprice") pprice:String,
-        @Field("pdesc") pdesc:String,
-        @Field("pstatus") pstatus : String
-    ): Call<Void>
+    fun UpdateProduct (
+        @Part("pid") pid: Int,
+        @Part("pname") pname:RequestBody,
+        @Part("pprice") pprice:RequestBody,
+        @Part("pdesc") pdesc:RequestBody,
+        @Part("pstatus") pstatus: RequestBody,
+        @Part pimage: MultipartBody.Part
+    ): Call<ResponseBody>
 
     @FormUrlEncoded
     @POST("productdelete.php")
